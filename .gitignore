@@ -1,0 +1,14 @@
+# output di Maven
+target/
+
+# database locale (viene ricreato al primo avvio)
+rossigo.db
+*.db-journal
+
+# log generati da Logback
+logs/
+
+# IDE
+.idea/
+*.iml
+.vscode/
