@@ -1,0 +1,15 @@
+<configuration>
+    <!-- I log vanno su file: la console resta pulita per i messaggi all'utente finale. -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/rossigo.log</file>
+        <append>true</append>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level [%logger{0}] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>
